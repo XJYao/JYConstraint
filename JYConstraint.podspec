@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "JYConstraint"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "Fast Layout Framework"
 
   # This description is used to generate tags and improve search results.
@@ -94,7 +94,7 @@ Pod::Spec.new do |s|
   s.source_files  = "#{s.name}/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
-  s.public_header_files = "#{s.name}/#{s.name}/*.h"
+  s.public_header_files = "#{s.name}/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
