@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
 #import "JYExpObject.h"
 
 @interface UIView (JYConstraint)
