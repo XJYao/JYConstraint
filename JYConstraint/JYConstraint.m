@@ -225,7 +225,7 @@ static const void *JYConstraintSecondAttributesKey = &JYConstraintSecondAttribut
 static const void *JYConstraintMultiplierKey = &JYConstraintMultiplierKey;
 static const void *JYConstraintConstantKey = &JYConstraintConstantKey;
 
-- (void)setjy_firstItem:(id)jy_firstItem {
+- (void)setJy_firstItem:(id)jy_firstItem {
     objc_setAssociatedObject(self, JYConstraintFirstItemKey, jy_firstItem, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
@@ -233,7 +233,7 @@ static const void *JYConstraintConstantKey = &JYConstraintConstantKey;
     return objc_getAssociatedObject(self, JYConstraintFirstItemKey);
 }
 
-- (void)setjy_firstAttributes:(NSMutableArray *)jy_firstAttributes {
+- (void)setJy_firstAttributes:(NSMutableArray *)jy_firstAttributes {
     objc_setAssociatedObject(self, JYConstraintFirstAttributesKey, jy_firstAttributes, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
@@ -246,7 +246,7 @@ static const void *JYConstraintConstantKey = &JYConstraintConstantKey;
     return firstAttributes;
 }
 
-- (void)setjy_relation:(NSLayoutRelation)jy_relation {
+- (void)setJy_relation:(NSLayoutRelation)jy_relation {
     objc_setAssociatedObject(self, JYConstraintRelationKey, [NSNumber numberWithInteger:jy_relation], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
@@ -258,7 +258,7 @@ static const void *JYConstraintConstantKey = &JYConstraintConstantKey;
     return relationObj ? [relationObj integerValue] : NSLayoutRelationEqual;
 }
 
-- (void)setjy_secondItem:(id)jy_secondItem {
+- (void)setJy_secondItem:(id)jy_secondItem {
     objc_setAssociatedObject(self, JYConstraintSecondItemKey, jy_secondItem, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
@@ -266,7 +266,7 @@ static const void *JYConstraintConstantKey = &JYConstraintConstantKey;
     return objc_getAssociatedObject(self, JYConstraintSecondItemKey);
 }
 
-- (void)setjy_secondAttributes:(NSMutableArray *)jy_secondAttributes {
+- (void)setJy_secondAttributes:(NSMutableArray *)jy_secondAttributes {
     objc_setAssociatedObject(self, JYConstraintSecondAttributesKey, jy_secondAttributes, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
@@ -279,7 +279,7 @@ static const void *JYConstraintConstantKey = &JYConstraintConstantKey;
     return secondAttributes;
 }
 
-- (void)setjy_multi:(CGFloat)jy_multi {
+- (void)setJy_multi:(CGFloat)jy_multi {
     objc_setAssociatedObject(self, JYConstraintMultiplierKey, [NSNumber numberWithFloat:jy_multi], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
@@ -291,7 +291,7 @@ static const void *JYConstraintConstantKey = &JYConstraintConstantKey;
     return multiObj ? [multiObj floatValue] : 0.0;
 }
 
-- (void)setjy_cons:(CGFloat)jy_cons {
+- (void)setJy_cons:(CGFloat)jy_cons {
     objc_setAssociatedObject(self, JYConstraintConstantKey, [NSNumber numberWithFloat:jy_cons], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
